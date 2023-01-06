@@ -1,0 +1,17 @@
+create table bookings(
+    id int(2) AUTO_INCREMENT primary key,
+    name varchar(50),
+    phoneno varchar(20) unique,
+    email varchar(50),
+    persons int(2)
+);
+
+create table tabs(
+        id int AUTO_INCREMENT primary key,
+        phoneno varchar(20)	
+);
+
+ALTER TABLE tabs AUTO_INCREMENT=101;
+
+drop TABLE bookings;
+DROP TABLE tabs;
